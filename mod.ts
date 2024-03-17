@@ -14,7 +14,7 @@ export interface RandOpts {
  * @param opts Options
  * @returns Random value
  */
-export const random = (opts?: RandOpts) => (opts?.random ?? Math.random)()
+export const random = (opts?: RandOpts): number => (opts?.random ?? Math.random)()
 
 /**
  * Get random float value
@@ -23,7 +23,7 @@ export const random = (opts?: RandOpts) => (opts?.random ?? Math.random)()
  * @param opts Options
  * @returns Ramdom float value
  */
-export const uniform = (min: number, max: number, opts?: RandOpts) =>
+export const uniform = (min: number, max: number, opts?: RandOpts): number =>
   random(opts) * (max - min) + min
 
 /**
