@@ -1,4 +1,9 @@
 /**
+ * This module contains main functions to calc random values.
+ * @module
+ */
+
+/**
  * This module functions's options
  */
 export interface RandOpts {
